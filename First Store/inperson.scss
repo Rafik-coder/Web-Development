@@ -1,0 +1,25 @@
+body {
+    background: rgb(193, 193, 235);
+    margin: 0;
+
+    .body {
+        display: flex;
+        flex-direction: column;
+        margin: 5em;
+        margin-top: .5em;
+
+        .head {
+            margin-bottom: 3em;
+            justify-content: center;
+            text-align: center;
+            line-height: 1.3em;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+    }
+
+
+
+}

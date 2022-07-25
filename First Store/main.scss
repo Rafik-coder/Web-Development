@@ -1,0 +1,271 @@
+body {
+    background: #dce5e7;
+    margin: 0;
+    font-family: 'Poppins';
+
+
+    // ########### CLASSES ###################################
+
+    .titlebar {
+        background: white;
+        padding: 1em;
+
+
+        .contain {
+            display: flex;
+            place-content: space-between;
+
+            .logo-pic {
+                width: 3.5em;
+                height: 3.5em;
+                margin-top: -1em;
+                margin-bottom: -1.5em;
+            }
+
+            .logo {
+                text-decoration: none;
+                font-weight: bold;
+                color: black;
+                font-size: 1.5em;
+                margin-left: -.4em;
+
+                &:hover {
+                    font-weight: bold;
+
+                }
+
+                span {
+                    color: green;
+                }
+
+                .slogan {
+                    text-transform: uppercase;
+                    color: gray;
+                    letter-spacing: 0.4em;
+                    font-size: .45em;
+                    margin-bottom: .5em;
+                    margin-top: .2em;
+                    margin-left: 4.9em;
+                }
+
+
+            }
+
+            nav {
+                display: none;
+            }
+
+            nav {
+                position: fixed;
+                z-index: 999;
+                width: 50%;
+                right: 0;
+                top: 0;
+                background: olivedrab;
+                height: 80vh;
+
+                .group {
+                    margin-bottom: 1em;
+                    margin-top: 3.5em;
+
+
+                    li {
+
+                        a {
+                            color: white;
+                            text-decoration: none;
+                            display: block;
+                            padding: .4em;
+                            font-size: 1.3em;
+                            text-align: right;
+
+                            &:hover {
+                                font-weight: bold;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+
+
+
+            .mobile-menu {
+                width: 2em;
+                height: auto;
+                cursor: pointer;
+            }
+
+            .mobile-menu-exit {
+                width: 2em;
+                height: auto;
+                float: right;
+                margin: .4em;
+                cursor: pointer;
+            }
+
+            nav.menu-btn {
+                display: block;
+            }
+
+        }
+
+
+    }
+
+    .Intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        // padding: 1em;
+
+        .top-side {
+            text-align: center;
+        }
+
+        .Our-services {
+            display: flex;
+            flex-direction: column;
+            margin: -1em;
+            margin-top: 5em;
+            background: grey;
+            text-align: center;
+
+            .service-t {
+                text-align: center;
+            }
+
+            .links {
+                margin: 0;
+                padding-left: .2em;
+            }
+
+            li {
+                font-size: 1.1em;
+                margin-top: 1em;
+                margin-bottom: 1em;
+                margin-left: 2em;
+
+                &:before {
+                    content: '';
+
+                }
+            }
+
+        }
+    }
+
+
+
+    // ###########################################
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    section {
+        padding: 5em 2em;
+    }
+
+
+    .Social {
+        background: rgb(75, 75, 216);
+        color: white;
+
+        .social-h {
+            font-size: medium;
+            text-align: center;
+            padding: 5em;
+            margin-top: -6em;
+        }
+
+        li {
+            background: #006bd6;
+            text-align: center;
+            padding: 2em 1em;
+            width: 80%;
+            margin: 0 auto 5em auto;
+            border-radius: 1em;
+
+            img {
+                width: 5em;
+                height: 5em;
+                border: 5px solid #006bd6;
+                border-radius: 50%;
+                margin-top: -4.5em;
+            }
+
+            .social-logo {
+                width: 2.5em;
+                height: 2.5em;
+                margin-left: -2em;
+            }
+        }
+    }
+
+    .contact-us {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        label {
+            display: block;
+            font-size: 1.2em;
+            margin-bottom: .5em;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: .8em;
+            margin-bottom: 1em;
+            border: .3em;
+            border: 1.5px solid gray;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #006bd6;
+            font-size: 1.2em;
+            width: 10em;
+            font-size: medium;
+            border: none;
+            display: inline-block;
+            padding: .8em .2em;
+            border-radius: 5em;
+            color: white;
+            cursor: pointer;
+        }
+
+    }
+
+}
+
+
+
+
+
+@media only screen and (min-width: 770px) {
+
+    .mobile-menu,
+    .mobile-menu-exit {
+        display: none;
+    }
+
+    .titlebar .contain {
+        display: grid;
+    }
+
+    .titlebar nav {
+        display: flex;
+    }
+}

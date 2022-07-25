@@ -1,0 +1,266 @@
+body {
+  background: #dce5e7;
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+body .titlebar {
+  background: white;
+  padding: 1em;
+}
+
+body .titlebar .contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+body .titlebar .contain .logo-pic {
+  width: 3.5em;
+  height: 3.5em;
+  margin-top: -1em;
+  margin-bottom: -1.5em;
+}
+
+body .titlebar .contain .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 1.5em;
+  margin-left: -.4em;
+}
+
+body .titlebar .contain .logo:hover {
+  font-weight: bold;
+}
+
+body .titlebar .contain .logo span {
+  color: green;
+}
+
+body .titlebar .contain .logo .slogan {
+  text-transform: uppercase;
+  color: gray;
+  letter-spacing: 0.4em;
+  font-size: .45em;
+  margin-bottom: .5em;
+  margin-top: .2em;
+  margin-left: 4.9em;
+}
+
+body .titlebar .contain nav {
+  display: none;
+}
+
+body .titlebar .contain nav {
+  position: fixed;
+  z-index: 999;
+  width: 50%;
+  right: 0;
+  top: 0;
+  background: olivedrab;
+  height: 80vh;
+}
+
+body .titlebar .contain nav .group {
+  margin-bottom: 1em;
+  margin-top: 3.5em;
+}
+
+body .titlebar .contain nav .group li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: .4em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+body .titlebar .contain nav .group li a:hover {
+  font-weight: bold;
+}
+
+body .titlebar .contain .mobile-menu {
+  width: 2em;
+  height: auto;
+  cursor: pointer;
+}
+
+body .titlebar .contain .mobile-menu-exit {
+  width: 2em;
+  height: auto;
+  float: right;
+  margin: .4em;
+  cursor: pointer;
+}
+
+body .titlebar .contain nav.menu-btn {
+  display: block;
+}
+
+body .Intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .Intro .top-side {
+  text-align: center;
+}
+
+body .Intro .Our-services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: -1em;
+  margin-top: 5em;
+  background: grey;
+  text-align: center;
+}
+
+body .Intro .Our-services .service-t {
+  text-align: center;
+}
+
+body .Intro .Our-services .links {
+  margin: 0;
+  padding-left: .2em;
+}
+
+body .Intro .Our-services li {
+  font-size: 1.1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+}
+
+body .Intro .Our-services li:before {
+  content: '';
+}
+
+body ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body section {
+  padding: 5em 2em;
+}
+
+body .Social {
+  background: #4b4bd8;
+  color: white;
+}
+
+body .Social .social-h {
+  font-size: medium;
+  text-align: center;
+  padding: 5em;
+  margin-top: -6em;
+}
+
+body .Social li {
+  background: #006bd6;
+  text-align: center;
+  padding: 2em 1em;
+  width: 80%;
+  margin: 0 auto 5em auto;
+  border-radius: 1em;
+}
+
+body .Social li img {
+  width: 5em;
+  height: 5em;
+  border: 5px solid #006bd6;
+  border-radius: 50%;
+  margin-top: -4.5em;
+}
+
+body .Social li .social-logo {
+  width: 2.5em;
+  height: 2.5em;
+  margin-left: -2em;
+}
+
+body .contact-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .contact-us h1 {
+  font-size: 2.5em;
+}
+
+body .contact-us label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: .5em;
+}
+
+body .contact-us input,
+body .contact-us textarea {
+  width: 100%;
+  padding: .8em;
+  margin-bottom: 1em;
+  border: .3em;
+  border: 1.5px solid gray;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .contact-us input[type="submit"] {
+  background-color: #006bd6;
+  font-size: 1.2em;
+  width: 10em;
+  font-size: medium;
+  border: none;
+  display: inline-block;
+  padding: .8em .2em;
+  border-radius: 5em;
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 770px) {
+  .mobile-menu,
+  .mobile-menu-exit {
+    display: none;
+  }
+  .titlebar .contain {
+    display: -ms-grid;
+    display: grid;
+  }
+  .titlebar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/*# sourceMappingURL=main.css.map */
